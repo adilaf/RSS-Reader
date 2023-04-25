@@ -2,7 +2,7 @@
 // have already either been implements in previous examples, or are a different
 // way to do something we have already discussed.  The JavaScript is provide
 // for self-study and review.
-//
+
 // Last time we use a 'template' this time we will build the DOM fragment
 // and insert into the DOM tree.  RSS feeds follow a similar structure
 // Each has has a title, link and description fields.  The following
