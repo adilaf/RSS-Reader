@@ -8,6 +8,19 @@
 // Each has has a title, link and description fields.  The following
 // function creates the corresponding HTML5 elements and inserts
 // them into the DOM tree.
+let xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function(){
+  if (xhr.readyState == 4 && xhr.status == 200){
+    // JSON Response
+    let data = JSON.parse(xhr.responseText);
+
+    //Call func to add the RSS feed to DOM
+    addRSStoDOM(data);
+  }
+};
+
+
 function addRSStoDOM(data) {
   // Create the 'outer' container to hold everything
   let itemsContainer = document.createElement('DIV');
